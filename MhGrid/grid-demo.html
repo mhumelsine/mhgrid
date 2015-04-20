@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="mh-grid.js"></script>
+    <script>
+        (function () {
+            $('#grid').mhgrid({
+                'firstName': {
+                    display: 'First Name'
+                }
+            }, {});
+            var grid = $('#grid').mhgrid();
+            grid.refresh([{ 'firstName': 'Michael' }]);
+        })();
+    </script>
+</head>
+<body>
+    <div id="grid"></div>
+</body>
+</html>
